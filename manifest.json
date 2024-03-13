@@ -4,14 +4,14 @@
   "description": "Reminds you to take a break once in a while!",
   "version": "1.0",
   "action": {
-    "default_popup": "index.html",
+    "default_popup": "popup.html",
     "default_title": "YouTube reminder",
     "default_icon": "icon.png"
   },
   "permissions": ["tabs", "activeTab"],
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
+      "matches": ["https://*/*"],
       "js": ["content.js"]
     }
   ],
